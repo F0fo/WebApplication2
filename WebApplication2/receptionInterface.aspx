@@ -31,6 +31,7 @@
 </div>
         <asp:Button ID="Button3" runat="server" Text="Modify table" OnClick="Unnamed2_Click"></asp:Button>
          SeatCount <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:CheckBox ID="Available" runat="server"></asp:CheckBox>
 
     </form>
 

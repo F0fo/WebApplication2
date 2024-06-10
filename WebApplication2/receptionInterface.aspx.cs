@@ -39,5 +39,11 @@ namespace WebApplication2
         {
             branch1.RemoveTable(Table1.getTableNo());
         }
+
+        protected void Unnamed2_Click(object sender, EventArgs e)
+        {
+            Table1.setSeatCount(Int32.Parse(TextBox1.Text));
+            Table1.setAvailable(Available.Checked);
+        }
     }
 }
