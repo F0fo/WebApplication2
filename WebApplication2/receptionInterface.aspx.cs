@@ -13,31 +13,37 @@ namespace WebApplication2
         Table Table1 = null;
         public void Page_Load(object sender, EventArgs e)
         {
-            DropDownList2.DataSource = Restaurant.getBranch();
-            DropDownList1.DataSource = branch1.getTableList();
-            DropDownList1.DataBind();
-            DropDownList2.DataBind();
+            //DropDownList2.DataSource = Restaurant.getBranch();
+            //DropDownList1.DataSource = branch1.getTableList();
+            //DropDownList1.DataBind();
+            //DropDownList2.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
             branch1.addTable(B2.Text, Int32.Parse(B1.Text));
+            String s = "";
+            foreach (var table in branch1.getTableList())
+            {
+                s += table + "";
+            }
+            Label1.Text = Table1.getTableNo();
         }
 
-        protected void Unnamed1_SelectedIndexChanged(object sender, EventArgs e)
-        {   
+        //protected void Unnamed1_SelectedIndexChanged(object sender, EventArgs e)
+        //{   
             
-            branch1 = Restaurant.getBranch(DropDownList1.SelectedItem.ToString());
-            Label2.Text = "Branch Selected " + branch1;
-            DropDownList1.DataSource = branch1.getTableList();
-            DropDownList1.DataBind();
-        }
+        //    branch1 = Restaurant.getBranch(DropDownList1.SelectedItem.ToString());
+        //    Label2.Text = "Branch Selected " + branch1;
+        //    DropDownList1.DataSource = branch1.getTableList();
+        //    DropDownList1.DataBind();
+        //}
 
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Table1 = branch1.GetTable(DropDownList1.SelectedItem.ToString());
-            Label1.Text = "yes";
-        }
+        //protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    Table1 = branch1.GetTable(DropDownList1.SelectedItem.ToString());
+        //    Label1.Text = "yes";
+        //}
 
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
@@ -54,6 +60,17 @@ namespace WebApplication2
         {
             Table1.setSeatCount(Int32.Parse(TextBox1.Text));
             Table1.setAvailable(Available.Checked);
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            branch1 = Restaurant.getBranch(T1.Text);
+        }
+
+        protected void Unnamed3_Click(object sender, EventArgs e)
+        {
+            Label1.Text = T2.Text + Table1.ToString();
+            Table1 = branch1.GetTable(T2.Text);
         }
     }
 }
