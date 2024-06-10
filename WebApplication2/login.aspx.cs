@@ -14,10 +14,10 @@ namespace WebApplication2
             Restaurant restaurant = new Restaurant("KFC");
             restaurant.addBranch("0", "Sigma Strasse");
             branch branch  = restaurant.getBranch("0");
-            
+            item.Text = restaurant.getName();
 
         }
-
+        
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("waiterInterface.aspx");
@@ -28,7 +28,7 @@ namespace WebApplication2
         {
             Response.Redirect("receptionInterface.aspx");
         }
-
+    
         protected void Button3_Click(object sender, EventArgs e)
         {
             Response.Redirect("managerInterface.aspx");

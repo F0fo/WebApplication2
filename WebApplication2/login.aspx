@@ -16,8 +16,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button3" runat="server" Text="Manager" OnClick="Button3_Click" />
         </div>
+        <asp:Label ID="item" runat="server" ></asp:Label>
     </form>
-    <p>
-        &nbsp;</p>
 </body>
 </html>
