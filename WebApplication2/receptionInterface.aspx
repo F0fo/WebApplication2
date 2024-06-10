@@ -8,15 +8,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="Unnamed1_SelectedIndexChanged"></asp:DropDownList>
+               
         
-        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
         <div>
         </div>
-        <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-        </asp:DropDownList>
         
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:TextBox runat="server"></asp:TextBox>
+
+        
+        
         <div>
         </div>
         <asp:Button ID="Button1" runat="server" Text="Add table" OnClick="Button1_Click"> </asp:Button>seatCount
