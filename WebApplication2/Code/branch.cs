@@ -129,5 +129,10 @@ namespace WebApplication2
         {
             return tables;
         }
+
+        public string toString()
+        {
+            return ID;
+        }
     }
 }

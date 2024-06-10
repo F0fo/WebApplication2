@@ -69,7 +69,7 @@
   <ItemGroup>
     <Content Include="login.aspx" />
     <Content Include="managerInterface.aspx" />
-    <Content Include="receptionInterface.aspx" />
+    <Content Include="receptionistinterface.aspx" />
     <Content Include="waiterInterface.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -97,16 +97,16 @@
     <Compile Include="Code\MenuSection.cs" />
     <Compile Include="Code\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="receptionInterface.aspx.cs">
-      <DependentUpon>receptionInterface.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="receptionInterface.aspx.designer.cs">
-      <DependentUpon>receptionInterface.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Code\Restaurant.cs" />
     <Compile Include="Code\Table.cs" />
     <Compile Include="Code\TableSeat.cs" />
+    <Compile Include="receptionistinterface.aspx.cs">
+      <DependentUpon>receptionistinterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="receptionistinterface.aspx.designer.cs">
+      <DependentUpon>receptionistinterface.aspx</DependentUpon>
+    </Compile>
     <Compile Include="waiterInterface.aspx.cs">
       <DependentUpon>waiterInterface.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

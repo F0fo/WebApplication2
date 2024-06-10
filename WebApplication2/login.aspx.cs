@@ -11,10 +11,8 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Restaurant restaurant = new Restaurant("KFC");
-            restaurant.addBranch("0", "Sigma Strasse");
-            branch branch  = restaurant.getBranch("0");
-            
+            Restaurant.addBranch("0", "Sigma Strasse");
+            Restaurant.addBranch("1", "Alpha Strasse");
 
         }
 
