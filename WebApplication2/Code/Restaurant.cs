@@ -22,7 +22,7 @@ namespace WebApplication2
         }
         public static void setName(String newName)
         {
-            this.name = newName;
+           name = newName;
         }
 
         public static void addBranch(String ID, String Address)
