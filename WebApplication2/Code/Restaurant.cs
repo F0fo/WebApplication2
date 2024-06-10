@@ -7,32 +7,31 @@ namespace WebApplication2
 {
     public class Restaurant
     {
-        String name;
-        List<branch> branches;
+        static String name;
+        static List<branch> branches = new List<branch>();
 
 
-        public Restaurant(String name)
+        public Restaurant(String name1)
         {
-            this.name = name;
-            this.branches = new List<branch>();
+            name = name1;
         }
 
-        public String getName()
+        public static String getName()
         {
-            return this.name;
+            return name;
         }
-        public void setName(String newName)
+        public static void setName(String newName)
         {
             this.name = newName;
         }
 
-        public void addBranch(String ID, String Address)
+        public static void addBranch(String ID, String Address)
         {
             branch newBranch = new branch(ID, Address);
             branches.Add(newBranch);
         }
 
-        public void removeBranch(String ID)
+        public static void removeBranch(String ID)
         {
             for (int i = 0; i < branches.Count; i++)
             {
@@ -44,7 +43,7 @@ namespace WebApplication2
 
         }
 
-        public branch getBranch(String ID) {
+        public static branch getBranch(String ID) {
 
             for (int i = 0; i < branches.Count; i++)
             {
@@ -59,6 +58,9 @@ namespace WebApplication2
 
         }
 
-
+        public static List<branch> getBranch()
+        {
+            return branches;
+        }
     }
 }

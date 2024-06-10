@@ -14,7 +14,7 @@ namespace WebApplication2
             Restaurant restaurant = new Restaurant("KFC");
             restaurant.addBranch("0", "Sigma Strasse");
             branch branch  = restaurant.getBranch("0");
-            item.Text = restaurant.getName();
+            
 
         }
         
