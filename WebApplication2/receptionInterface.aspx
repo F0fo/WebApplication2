@@ -19,13 +19,19 @@
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <div>
         </div>
-        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click"> </asp:Button>
-            />seatCount
+        <asp:Button ID="Button1" runat="server" Text="Add table" OnClick="Button1_Click"> </asp:Button>seatCount
         <asp:TextBox ID="B1" runat="server"></asp:TextBox>ID
 
-    <asp:TextBox ID="B2" runat="server"></asp:TextBox></form>
-      <div>
+    <asp:TextBox ID="B2" runat="server"></asp:TextBox>
+
+  <div>
   </div>
+        <asp:Button ID="Button2" runat="server" Text="Remove table" OnClick="Unnamed1_Click"></asp:Button>
+
+
+
+    </form>
+
 
 </body>
 </html>

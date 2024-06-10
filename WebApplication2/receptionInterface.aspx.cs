@@ -34,5 +34,10 @@ namespace WebApplication2
             Table1 = branch1.GetTable(DropDownList1.SelectedItem.ToString());
             Label1.Text = "Table Selected " + Table1;
         }
+
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            branch1.RemoveTable(Table1.getTableNo());
+        }
     }
 }
