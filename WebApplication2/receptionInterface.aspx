@@ -20,15 +20,17 @@
         <div>
         </div>
         <asp:Button ID="Button1" runat="server" Text="Add table" OnClick="Button1_Click"> </asp:Button>seatCount
-        <asp:TextBox ID="B1" runat="server"></asp:TextBox>ID
-
-    <asp:TextBox ID="B2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="B1" runat="server"></asp:TextBox>
+        ID <asp:TextBox ID="B2" runat="server"></asp:TextBox>
 
   <div>
   </div>
         <asp:Button ID="Button2" runat="server" Text="Remove table" OnClick="Unnamed1_Click"></asp:Button>
 
-
+    <div>
+</div>
+        <asp:Button ID="Button3" runat="server" Text="Modify table" OnClick="Unnamed2_Click"></asp:Button>
+         SeatCount <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
 
     </form>
 

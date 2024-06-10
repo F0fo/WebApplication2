@@ -130,7 +130,7 @@ namespace WebApplication2
             return tables;
         }
 
-        public string toString()
+        public override string ToString()
         {
             return ID;
         }
